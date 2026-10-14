@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICICI Life - Process</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+:root{--navy:#0B1220;--royal:#1E3A8A;--line:#E2E8F0}
+body{background:linear-gradient(180deg,#F8FAFF 0%, #EFF6FF 100%)}.wrap{max-width:460px;margin:0 auto}
+.top{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:8px 12px;display:flex;justify-content:space-between;align-items:center}
+.lang{border:1px solid var(--line);background:#EEF2FF;border-radius:20px;padding:2px;display:flex}
+.lang button{border:none;background:transparent;padding:5px 12px;border-radius:16px;font-size:10px;font-weight:700;cursor:pointer}
+.lang button.on{background:var(--navy);color:#fff}
+.tabs{display:flex;gap:6px;padding:8px;overflow-x:auto}
+.tabs a{flex:1;white-space:nowrap;border:1px solid var(--line);background:#fff;padding:8px 10px;border-radius:20px;font-size:10px;font-weight:700;text-decoration:none;color:var(--navy);text-align:center}
+.tabs a.active{background:linear-gradient(135deg,#0B1220,#1E3A8A);color:#fff}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;margin:10px 8px;box-shadow:0 8px 24px rgba(15,23,42,.05)}
+.tit{font-size:12px;font-weight:800;color:var(--royal)}
+.ti{background:linear-gradient(135deg,#0B1220 0%, #1E3A8A 70%, #2a4cb8 100%);border-radius:14px;padding:14px;margin:10px 0;color:#EFF6FF;border:1px solid #1E3A8A}
+.small{font-size:10.5px;line-height:1.7;color:#DBEAFE}
+.ti b{color:#fff}
+.btn{width:100%;padding:11px;border:none;border-radius:10px;font-weight:800;font-size:11px;cursor:pointer;background:linear-gradient(135deg,#0B1220,#1E3A8A);color:#fff;display:block;text-align:center;text-decoration:none}
+.dp{width:32px;height:32px;border-radius:50%;border:2px solid var(--royal);object-fit:cover}
+</style>
+</head>
+<body>
+<div class="top"><div style="display:flex;align-items:center;gap:8px"><b style="font-size:13px;color:var(--navy)">ICICI <span style="color:var(--royal)">LIFE</span></b><img src="profile.jpg" class="dp"></div><div style="display:flex;gap:6px;align-items:center"><span style="font-size:8px;background:var(--navy);color:#fff;padding:4px 8px;border-radius:12px;font-weight:700">ADIL HUSSAIN 7667456772</span><div class="lang"><button id="enB" class="on" onclick="setL('en')">EN</button><button id="hiB" onclick="setL('hi')">हिंदी</button></div></div></div>
+<div class="wrap">
+<div class="tabs"><a href="index.html">1. Intro</a><a class="active">2. Process</a><a href="earning.html">3. Earning</a><a href="join.html">4. Join Now</a></div>
+<div class="card"><div class="tit" id="pH">🚀 FSP se Advisor Tak Full Process - Detail</div>
+<div class="ti"><b id="s1t" style="font-size:11px"></b><div id="s1d" class="small" style="margin-top:6px"></div></div>
+<div class="ti"><b id="s2t" style="font-size:11px"></b><div id="s2d" class="small" style="margin-top:6px"></div></div>
+<div class="ti"><b id="s3t" style="font-size:11px"></b><div id="s3d" class="small" style="margin-top:6px"></div></div>
+<div class="ti"><b id="s4t" style="font-size:11px"></b><div id="s4d" class="small" style="margin-top:6px"></div></div>
+<div class="ti"><b id="s5t" style="font-size:11px"></b><div id="s5d" class="small" style="margin-top:6px"></div></div>
+<a href="earning.html" class="btn">Next: Earning Calculator Dekho →</a>
+</div>
+</div>
+<script>
+const LD={en:{pH:'🚀 FSP to Advisor Full Process - Detail',s1t:'1. FSP ID Creation by Unit Manager',s1d:'Unit Manager Adil Hussain will create your FSP ID. FSP = Financial Service Provider. This is your first ID in company. Documents: Aadhaar, PAN, Bank Passbook, Photo, 10th/12th Certificate. After verification ID is created. 100% WFH, Pan India, No Investment.',s2t:'2. IRDA Exam - IC-38 - Training & Exam',s2d:'Pre-exam training will be given by ICICI Life. 50 Questions MCQ - Life, Term, ULIP, Riders. Exam will be in your nearby city. Whether Mumbai Delhi Kolkata Patna Ranchi, exam will be there. No need to come to Ranchi. For 30+ age fee is free.',s3t:'3. FSP Clear → FOS / Advisor',s3d:'After clearing exam, you get licensed advisor code. Now you are officially ICICI Life advisor.',s4t:'4. AIP Training + Full Product Training',s4d:'ASIP, GIFT, Gold training. Company gives detail training on each product - which policy is right for which customer. Full sales training free.',s5t:'5. Policy Sell → Active + Earning + Trip',s5d:'As soon as you sell first policy you become Active. After Active, commission + Wow + Golden Age starts. On good work foreign/domestic trip - Contest basis.'},hi:{pH:'🚀 FSP se Advisor Tak Full Process - Detail',s1t:'1. FSP ID Creation by Unit Manager',s1d:'Unit Manager Aadil Husain aapki FSP ID banayenge. FSP = Financial Service Provider. Ye aapki pehli ID hoti hai company me. Documents: Aadhaar, PAN, Bank Passbook, Photo, 10th/12th Certificate. Verify hone ke baad ID banti hai. 100% WFH, Pan India, No Investment.',s2t:'2. IRDA Exam - IC-38 - Training & Exam',s2d:'Pre-exam training ICICI Life degi. 50 Questions MCQ - Life, Term, ULIP, Riders. Exam aapke nearby city me hoga. Chahe Mumbai Delhi Kolkata Patna Ranchi kahi se ho, wahi exam. Ranchi aane ki zarurat nahi. 30+ age ke liye fee free.',s3t:'3. FSP Clear → FOS / Advisor',s3d:'Exam clear ke baad aapko licensed advisor code milta hai. Ab aap officially ICICI Life advisor ban gaye.',s4t:'4. AIP Training + Full Product Training',s4d:'ASIP, GIFT, Gold training. Company dwara ek-ek product ki detail training - kaun si policy kis customer ke liye sahi hai. Full sales training free.',s5t:'5. Policy Sell → Active + Earning + Trip',s5d:'Pehli policy sell karte hi Active. Active ke baad commission + Wow + Golden Age start. Accha kaam par foreign/domestic trip - Contest basis.'}};
+function setL(l){document.getElementById('enB').classList.toggle('on',l=='en');document.getElementById('hiB').classList.toggle('on',l=='hi');let d=LD[l];document.getElementById('pH').innerText=d.pH;document.getElementById('s1t').innerText=d.s1t;document.getElementById('s1d').innerHTML=d.s1d;document.getElementById('s2t').innerText=d.s2t;document.getElementById('s2d').innerHTML=d.s2d;document.getElementById('s3t').innerText=d.s3t;document.getElementById('s3d').innerHTML=d.s3d;document.getElementById('s4t').innerText=d.s4t;document.getElementById('s4d').innerHTML=d.s4d;document.getElementById('s5t').innerText=d.s5t;document.getElementById('s5d').innerHTML=d.s5d;}setL('hi');
+</script>
+</body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </html>
